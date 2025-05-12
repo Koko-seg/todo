@@ -84,6 +84,7 @@ export default function Home() {
           clearButton={clearComplete}
         />
       </div>
+      <div>s</div>
     </div>
   );
 }
