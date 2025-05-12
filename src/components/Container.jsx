@@ -19,7 +19,12 @@ export const Container = ({ setTasklist, taskList }) => {
     }
     setTasklist([...taskList, newTask]);
     setInputValue("");
-  };
+};
+   const handlekeyDown=(event)=> {
+      if (event.key === "Enter") {
+        handleAdd ()
+      }
+    }
 
   return (
     <div>
@@ -30,16 +35,14 @@ export const Container = ({ setTasklist, taskList }) => {
             value={inputValue}
             onChange={handleChange}
             placeholder="Add a new task..."
+            onKeyDown={handlekeyDown}
           />
           <button className={styles.taskAddButton} onClick={handleAdd}>
             Add
           </button>
         </div>
 
-        {/* <div className={styles.footer}>
-          <span>Powered by</span>
-          <span className={styles.pinecone}>Pinecone academy</span>
-        </div> */}
+      
       </div>
     </div>
   );
