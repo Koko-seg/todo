@@ -60,7 +60,7 @@ export default function Home() {
   ).length;
 
   return (
-    <div>
+    <div className={styles.body}>
       <div className={styles.general}>
         <h1 className={styles.title}>ToDo List</h1>
         <Container setTasklist={setTasklist} taskList={taskList} />
@@ -83,8 +83,11 @@ export default function Home() {
           taskCompleted={taskCompleted}
           clearButton={clearComplete}
         />
+        <div className={styles.footer}>
+          <span>Powered by</span>
+          <span className={styles.pinecone}>Pinecone academy</span>
+        </div>
       </div>
-      <div>s</div>
     </div>
   );
 }
