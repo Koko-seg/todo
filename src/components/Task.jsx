@@ -27,24 +27,24 @@ export const Task = ({ task, removeTaskById, completedButton }) => {
   );
 };
 
-const addFood = () => {
-  foods.push("🍕");
-};
+// const addFood = () => {
+//   foods.push("🍕");
+// };
 
-const filterFood = "🍕";
+// const filterFood = "🍕";
 
-const foods = ["🍕", "🍔"];
+// const foods = ["🍕", "🍔"];
 
-const renderFoods = foods.filter((food) => {
-  if (filterFood == null) {
-    return true;
-  } else {
-    return food === filterFood;
-  }
-});
+// const renderFoods = foods.filter((food) => {
+//   if (filterFood == null) {
+//     return true;
+//   } else {
+//     return food === filterFood;
+//   }
+// });
 
-const onSelectFilterFood = () => {
-  filterFood = "🍕";
-};
+// const onSelectFilterFood = () => {
+//   filterFood = "🍕";
+// };
 
-<button onClick={onSelectFilterFood}></button>;
+// <button onClick={onSelectFilterFood}></button>;
