@@ -26,25 +26,3 @@ export const Task = ({ task, removeTaskById, completedButton }) => {
     </div>
   );
 };
-
-// const addFood = () => {
-//   foods.push("🍕");
-// };
-
-// const filterFood = "🍕";
-
-// const foods = ["🍕", "🍔"];
-
-// const renderFoods = foods.filter((food) => {
-//   if (filterFood == null) {
-//     return true;
-//   } else {
-//     return food === filterFood;
-//   }
-// });
-
-// const onSelectFilterFood = () => {
-//   filterFood = "🍕";
-// };
-
-// <button onClick={onSelectFilterFood}></button>;

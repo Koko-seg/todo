@@ -64,8 +64,7 @@ export default function Home() {
       <div className={styles.general}>
         <h1 className={styles.title}>ToDo List</h1>
         <Container setTasklist={setTasklist} taskList={taskList} />
-        <div className={styles.threeButtons}
-        >
+        <div className={styles.threeButtons}>
           {filters.map((filter) => {
             return <Filter key={filter} onFilter={onFilter} filter={filter} />;
           })}
@@ -85,7 +84,7 @@ export default function Home() {
           clearButton={clearComplete}
         />
         <div className={styles.footer}>
-          <span>Made by</span>
+          <span className={styles.noTasks}>Made by</span>
           <span className={styles.pinecone}>Tserenkhand</span>
         </div>
       </div>

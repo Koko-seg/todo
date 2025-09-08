@@ -1,4 +1,3 @@
-
 .body {
   background: #f0f2f5;
   display: flex;
@@ -23,7 +22,7 @@
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
-  color: #3b82f6; 
+  color: #3b82f6;
   font-size: 28px;
   font-weight: 600;
 }
@@ -46,8 +45,6 @@
   height: 20px;
   display: flex;
   gap: 10px;
-  
-  
 }
 .pinecone {
   color: #3b73ed;
@@ -78,7 +75,6 @@
   display: flex;
   gap: 10px;
   align-items: center;
-  
 }
 .clearButton {
   padding: 10px 20px;
@@ -96,4 +92,14 @@
   height: auto;
   flex-direction: row;
   gap: 20px;
+}
+.noTasks {
+  color: #3984e6;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+.madeBy {
+  color: #76a4e1;
+  font-weight: 300;
+  font-size: 0.8rem;
 }

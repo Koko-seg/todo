@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 
 export const SummaryTask = ({ allCount, taskCompleted, clearButton }) => {
   if (!allCount && !taskCompleted) {
-    return <p>No tasks yet. Add one above!</p>;
+    return <p className={styles.noTasks}>No tasks yet. Add one above!</p>;
   }
   return (
     <div className={styles.taskComplete}>
